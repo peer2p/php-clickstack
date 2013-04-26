@@ -184,7 +184,7 @@ install_app() {
     fi
     
     echo "Rewriting application permissions"
-    chmod -R g-w,o-rwx "$app_dir/app"
+    chmod -R 766 "$app_dir/app"
 }
 
 write_control() {
